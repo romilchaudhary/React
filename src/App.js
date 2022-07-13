@@ -19,6 +19,8 @@ import React, {useRef, useState} from 'react';
 import Student from './component/Student';
 import DynamicUser from './component/DynamicUser';
 import User from './component/User';
+import GetApi from './component/GetApi';
+import PostApi from './component/PostApi';
 
 function App() {
   const InputParentRef = useRef(null);
@@ -60,6 +62,8 @@ function App() {
           <Route path="ref" element={<FormData />} />
           <Route path="dynamic" element={<DynamicUser />} />
           <Route path='user/:id/:name' element={<User />} />
+          <Route path='get-data' element={<GetApi />} />
+          <Route path='post-data' element={<PostApi />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>

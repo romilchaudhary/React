@@ -37,7 +37,13 @@ const Layout = () => {
           </li>
           <li>
             <Link to="/dynamic">Dynamic Routing</Link>
-          </li>          
+          </li>
+          <li>
+            <Link to="/get-data">GET API</Link>
+          </li>
+          <li>
+            <Link to="/post-data">POST API</Link>
+          </li>         
         </ul>
       </nav>
       <Outlet />
